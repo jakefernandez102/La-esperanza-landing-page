@@ -1,0 +1,45 @@
+@use "base/variables" as v;
+@use "base/mixins" as m;
+
+.bloques {
+    &__grid {
+        @include m.grid(2, 0rem);
+        grid-auto-flow: dense;
+    }
+}
+.bloque {
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: v.$blanco;
+
+    &:nth-child(1) {
+        background-color: v.$primario;
+    }
+    &:nth-child(2) {
+        background-image: url();
+        @include m.bgImage("../img/bg-1.jpg");
+    }
+    &:nth-child(3) {
+        background-color: v.$secundario;
+        @include m.tablet {
+            grid-column: 2 / 3;
+        }
+    }
+    &:nth-child(4) {
+        @include m.bgImage("../img/bg-2.jpg");
+    }
+    &__contenido {
+        max-width: 40rem;
+        border-block: 1px solid v.$blanco;
+    }
+    &__heading {
+        text-transform: uppercase;
+    }
+    &__texto {
+        font-size: 2rem;
+    }
+}
