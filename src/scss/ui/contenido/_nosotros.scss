@@ -11,7 +11,7 @@
     }
     &__imagen {
         margin: 0 auto;
-        width: 20rem
+        width: 20rem;
     }
     &__grid {
         @include m.grid(1, 2rem);
@@ -20,4 +20,43 @@
             @include m.grid(3, 2rem);
         }
     }
+}
+
+.banner {
+    position: relative;
+
+    .banner-img {
+    }
+    .dark-layer {
+        @include m.tablet {
+            position: absolute;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: #000;
+            opacity: 0.5;
+        }
+    }
+
+    .hashtag {
+        text-align: center;
+        @media screen and (max-width: 400px) {
+            font-size: 1rem;
+        }
+        @include m.tablet {
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #fff;
+            z-index: 999;
+        }
+    }
+}
+
+.contenido-texto {
+    text-align: justify;
 }

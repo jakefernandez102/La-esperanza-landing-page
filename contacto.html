@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header contenedor">
+        <div class="header__grid">
+            <a href="index.html" class="header__logo">
+                <img src="build/img/logo_laesperanza.png" alt="Logo Escuela Cocina">
+            </a>
+
+            <nav class="navegacion">
+                <a href="nosotros.html" class="navegacion__link">Nosotros</a>
+                <!-- <a href="#" class="navegacion__link">Blog</a> -->
+                <a href="productos.html" class="navegacion__link">Productos</a>
+                <!-- <a href="#" class="navegacion__link">Galeria</a> -->
+                <a href="#" class="navegacion__link">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    <main class="contenedor">
+
+        <section class="map">
+            <div class="g-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1965.3212058472334!2d-83.9010158258103!3d9.880337540344122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwNTInNDkuMiJOIDgzwrA1Myc1OS4yIlc!5e0!3m2!1ses-419!2sco!4v1700516478109!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div>
+                <p class="waze-a">
+                    <a href="https://waze.com/ul/hd1u24ydj1">ir en Waze</a>
+                </p>
+            </div>
+        </section>
+        <section class="form-contacto">
+            <form id="contactForm" action="https://formsubmit.co/jake.fernandezbrizuela@outlook.com" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Asunto:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="message" rows="4" required></textarea>
+                <input type="hidden" name="_captcha" value="false"> 
+                <button type="submit" id="enviarBtn">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+            <div class="footer__grid contenedor">
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__link">Nosotros</a>
+                    <!-- <a href="#" class="navegacion__link">Blog</a> -->
+                    <a href="productos.html" class="navegacion__link">Productos</a>
+                    <!-- <a href="#" class="navegacion__link">Galeria</a> -->
+                    <a href="contacto.html" class="navegacion__link">Contacto</a>
+                </nav>
+                    
+                <div class="insta">
+                    <nav class="sociales">
+                        <a class="sociales__enlace" class="" href="https://www.instagram.com/laesperanzaenelcampo/?utm_source=ig_web_button_share_sheet&igshid=MmVlMjlkMTBhMg==">
+                            <span class="sociales__accesible">instagram</span>
+                        </a>
+                    </nav>
+                </div>
+
+                <p class="footer__copyright">
+                    Todos los derechos reservados |by <a class="jakes-anchor" href="https://portfoliojakefernandez.netlify.app">JakeFernandez</a> 2023 &copy;
+                </p>
+            </div>
+    </footer>
+
+    <script src="./build//js/cards.js"></script>
+</body>
+</html>
